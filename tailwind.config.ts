@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				quantum: {
+					"black": "#0A0A0A",
+					"deep-blue": "#0033cc",
+					"electric-blue": "#00ccff",
+					"neon-blue": "#00bfff",
+					"text-gray": "#E0E0E0"
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,41 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 5px 0 rgba(0, 204, 255, 0.5)'
+					},
+					'50%': { 
+						boxShadow: '0 0 20px 5px rgba(0, 204, 255, 0.7)'
+					}
+				},
+				'float-particle': {
+					'0%, 100%': { 
+						transform: 'translateY(0) translateX(0)'
+					},
+					'25%': { 
+						transform: 'translateY(-10px) translateX(10px)'
+					},
+					'50%': { 
+						transform: 'translateY(5px) translateX(-5px)'
+					},
+					'75%': { 
+						transform: 'translateY(-5px) translateX(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'float-particle': 'float-particle 8s ease-in-out infinite',
+			},
+			fontFamily: {
+				outfit: ['Outfit', 'sans-serif'],
+			},
+			backgroundImage: {
+				'quantum-gradient': 'linear-gradient(90deg, #0033cc, #00ccff)',
 			}
 		}
 	},
