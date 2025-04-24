@@ -89,7 +89,12 @@
 }
 
 .btn-quantum {
-  @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out rounded-full shadow-md bg-gradient-to-r from-quantum-deep-blue to-quantum-electric-blue group hover:ring-2 hover:ring-offset-2 hover:ring-quantum-electric-blue hover:ring-offset-quantum-black;
+  @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out rounded-full shadow-md bg-gradient-to-r from-quantum-deep-blue to-quantum-electric-blue hover:ring-2 hover:ring-offset-2 hover:ring-quantum-electric-blue hover:ring-offset-quantum-black;
+}
+
+/* Add this class to your button elements when you need the group functionality */
+.btn-quantum-group {
+  @apply group;
 }
 
 .text-gradient {
