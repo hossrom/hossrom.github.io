@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -94,7 +93,7 @@
 
 /* Add this class to your button elements when you need the group functionality */
 .btn-quantum-group {
-  @apply group;
+  /* Empty class, will be applied via HTML class */
 }
 
 .text-gradient {
